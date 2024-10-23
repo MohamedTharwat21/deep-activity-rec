@@ -1,5 +1,4 @@
-# deep-activity-rec
-Pytorch implementation of Paper ibrahim et al, cvpr 2016 - A Hierarchical Deep Temporal Model for Group Activity Recognition -## [This Project is a Pytorch Implementation for the paper called :  "A Hierarchical Deep Temporal Model for Group Activity Recognition." Mostafa S. Ibrahim, Srikanth Muralidharan, Zhiwei Deng, Arash Vahdat, Greg Mori.  IEEE Computer Vision and Pattern Recognition 2016](http://www.cs.sfu.ca/~mori/research/papers/ibrahim-cvpr16.pdf)
+## [This Project is a Pytorch Implementation for the paper called :  "A Hierarchical Deep Temporal Model for Group Activity Recognition." Mostafa S. Ibrahim, Srikanth Muralidharan, Zhiwei Deng, Arash Vahdat, Greg Mori.  IEEE Computer Vision and Pattern Recognition 2016](http://www.cs.sfu.ca/~mori/research/papers/ibrahim-cvpr16.pdf)
 
 ## Contents
 0. [History](#history)
@@ -96,6 +95,8 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
 
 ## Experiments
 
-![alt text](image-1.png)
+ 
 
 **Table 1**: Comparison of the team activity recognition performance of baselines against our model evaluated on the Volleyball Dataset. Experiments are using 2 group styles with max pool strategy. Last 3 entries comparison against Improved Dense Trajectories approach.
+
+
