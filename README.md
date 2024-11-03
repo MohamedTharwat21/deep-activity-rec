@@ -92,11 +92,3 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
   * Player Annotation corresponds to a tight bounding box surrounds each player
 * Each {Player Annotation} in format: {Action Class} X Y W H
 * Videos with resolution of 1920x1080 are: 2 37 38 39 40 41 44 45 (8 in total). All others are 1280x720.
-
-## Experiments
-
- 
-
-**Table 1**: Comparison of the team activity recognition performance of baselines against our model evaluated on the Volleyball Dataset. Experiments are using 2 group styles with max pool strategy. Last 3 entries comparison against Improved Dense Trajectories approach.
-
-
