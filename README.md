@@ -1,4 +1,4 @@
-## [This Project is a Pytorch Implementation for the paper called :  "A Hierarchical Deep Temporal Model for Group Activity Recognition." Mostafa S. Ibrahim, Srikanth Muralidharan, Zhiwei Deng, Arash Vahdat, Greg Mori.  IEEE Computer Vision and Pattern Recognition 2016](http://www.cs.sfu.ca/~mori/research/papers/ibrahim-cvpr16.pdf)
+## [A Pytorch Implementation of the paper called :  "A Hierarchical Deep Temporal Model for Group Activity Recognition." Mostafa S. Ibrahim, Srikanth Muralidharan, Zhiwei Deng, Arash Vahdat, Greg Mori.  IEEE Computer Vision and Pattern Recognition 2016](http://www.cs.sfu.ca/~mori/research/papers/ibrahim-cvpr16.pdf)
 
 ## Contents
 0. [History](#history)
