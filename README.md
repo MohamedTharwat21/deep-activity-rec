@@ -11,13 +11,11 @@
 0. [Poster and Powerpoint](#poster-and-powerpoint)
 
 ## History
-* The first version of this work is accepted at CVPR 2016.
-* An extended work is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
+* The paper is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
 * This version builds on the previous version to include the following:
-  * We have collected an expanded Volleyball dataset that is 3 times larger than CVPR submission.
-  * We conducted further analysis of experimental results and included comparisons to an additional set of baseline methods.
-  * We implemented a variant of our approach to perform spatial pooling strategies over people.
-* The provided dataset is the expanded version. Please use and compare against this version.
+  * They - in their work - have collected an expanded Volleyball dataset that is 3 times larger than CVPR submission.
+  * I conducted further analysis of experimental results and included comparisons to an additional set of baseline methods - and implemented a variant of our approach to perform spatial pooling strategies over people.
+   
 
 ## Abstract
 In group activity recognition, the temporal dynamics of the whole activity can be inferred based on the dynamics of the individual people representing the activity. We build a deep model to capture these dynamics based on LSTM models. To make use of these observations, we present a **2-stage deep temporal model for the group activity recognition** problem.  In our model, a LSTM model is designed to represent **action dynamics of individual people** in a sequence and another LSTM model is designed to **aggregate person-level information** for whole activity understanding.  We evaluate our model over two datasets: the Collective Activity Dataset and a new volleyball dataset.
