@@ -1,0 +1,15 @@
+
+
+Baseline B4
+
+ ● Implementation #1
+            ○ Use the classifier of B1-tuned (Baseline-1) to extract representation per clip
+    ■ Use 9 frames per each Clip
+    ■ Now you have sequence for each clip of 9 steps
+            ○ Now train an LSTM on these sequences
+            ○ Start with this implementation.
+            --------------------------
+
+ ● Implementation #2
+            ○ Extend the classifier network directly with an LSTM layer then classification
+            ○ This way no need to do explicit features extraction
