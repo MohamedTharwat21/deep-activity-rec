@@ -10,6 +10,7 @@
 0. [Installation](#installation)  
 0. [Key Insights](#key-insights)
 0. [Results](#results) 
+0. [Future Improvements](#Future-Improvements)    
 
    
 ## History
@@ -181,4 +182,37 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
 ## **Installation**  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/
+   git clone https://github.com/MohamedTharwat21/deep-activity-rec
+
+
+## **Future Improvements**
+While the current implementation leverages ResNet50 and LSTM for temporal modeling, future enhancements could incorporate the following state-of-the-art methodologies to push the boundaries of group activity recognition:
+
+### 1. Transformer-based Models
+- **Vision Transformers (ViTs)**: Employ ViTs for feature extraction to capture global contextual relationships across frames.  
+- **Temporal Attention Mechanisms**: Introduce attention mechanisms to better model inter-frame dependencies and long-range temporal patterns.  
+- **Multi-modal Transformers**: Explore transformers that integrate spatial, temporal, and team-level dynamics effectively.
+
+### 2. Graph Neural Networks (GNNs)
+- **Graph Structure**: Model player interactions as a graph where nodes represent players, and edges capture their spatial and temporal interactions.  
+- **Spatio-temporal GNNs**: Dynamically learn relationships between players within a frame and across sequential frames.  
+- **Graph Pooling**: Experiment with graph pooling techniques to generate scene-level embeddings for enhanced activity recognition.
+
+### 3. Self-Supervised Learning
+- **Unlabeled Data Pretraining**: Integrate self-supervised pretraining techniques to leverage unannotated data for better feature representations.  
+- **Contrastive Learning**: Utilize contrastive learning frameworks to pretrain models on frame sequences, improving performance on downstream tasks.
+
+### 4. Data Augmentation and Synthetic Data
+- **Advanced Augmentation**: Incorporate techniques such as frame-level adversarial perturbations and time-warping.  
+- **Generative Adversarial Networks (GANs)**: Use GANs to synthesize player movements and activities, expanding dataset diversity.
+
+### 5. Ensemble Methods
+- **Model Integration**: Combine ResNet-LSTM architectures with GNN and Transformer-based models for robust predictions.  
+- **Stacking and Voting**: Use stacking techniques or voting mechanisms to integrate multiple model predictions effectively.
+
+### 6. Real-time Inference
+- **Optimization for Edge Devices**: Optimize the model pipeline for deployment on edge devices for **real-time group activity recognition** in dynamic settings like sports analytics or surveillance systems.
+
+### Expected Impact of Future Work
+Implementing these improvements could significantly enhance the accuracy and robustness of group activity recognition models, making them more suitable for complex real-world scenarios. These methodologies also pave the way for broader applications in multi-agent systems, behavioral analysis, and automated event summarization.
+
