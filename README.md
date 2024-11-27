@@ -164,6 +164,7 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
 
 
 <img src="https://github.com/user-attachments/assets/2767214f-8cc7-4be9-a2f4-b381bfbccf4f" alt="Figure 3" height="400" >
+
 **Figure 5**: 9 person level labels, and 8 group activity labels.
 ---
 
