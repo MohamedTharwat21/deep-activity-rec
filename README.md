@@ -6,7 +6,6 @@
 0. [Model](#model)
 0. [Baselines and Experiments](#baselines-and-experiments)  
 0. [Dataset](#dataset)
-0. [Experiments](#experiments)
 0. [Installation](#installation)  
 0. [Key Insights](#key-insights)
 0. [Results](#results) 
