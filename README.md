@@ -37,7 +37,16 @@ This project investigates **group activity recognition** in volleyball games thr
 
 **Figure 3**: Previous basic mode drops spatial information. In updated model, 2-group pooling to capture spatial arrangements of players.
 
+<img src="https://github.com/user-attachments/assets/e9d8aa64-859f-4052-9a6e-09f45aa29d8a" alt="Figure 3" height="400" >
+
+**Figure 4**: Hierarchical Deep Temporal Model
+
+
 ## **Baselines and Experiments**  
+
+<img src="https://github.com/user-attachments/assets/7b3f45e9-5db8-4700-bd89-25f5d36bf95b" alt="Figure 3" height="400" >
+
+**Figure 5** :  Baselines
 
 ### **Baseline B1-Tuned**  
 - **Objective:** Fine-tune an image classifier for 8 activity classes using only the middle frame of each clip.  
@@ -113,12 +122,12 @@ We collected a new dataset using publicly available **YouTube volleyball** video
 
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/dataset1.jpg" alt="Figure 3" height="400" >
 
-**Figure 3**: A frame labeled as Left Spike and bounding boxes around each team players is annotated in the dataset.
+**Figure 5**: A frame labeled as Left Spike and bounding boxes around each team players is annotated in the dataset.
 
 
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/dataset2.jpg" alt="Figure 4" height="400" >
 
-**Figure 4**: For each visible player, an action label is annotaed.
+**Figure 6**: For each visible player, an action label is annotaed.
 
 They used 3493 frames for training, and the remaining 1337 frames for testing. The train-test split of is performed at video level, rather than at frame level so that it makes the evaluation of models more convincing. The list of action and activity labels and related statistics are tabulated in following tables:
 
@@ -165,7 +174,7 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
 
 <img src="https://github.com/user-attachments/assets/2767214f-8cc7-4be9-a2f4-b381bfbccf4f" alt="Figure 3" height="400" >
 
-**Figure 5**: 9 person level labels, and 8 group activity labels.
+**Figure 7**:    9 person level labels, and 8 group activity labels.
 
 
 ---
