@@ -17,7 +17,7 @@
 * The paper is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
 * They - in their work - have collected an expanded Volleyball dataset - which i will use in my training - that is 3 times larger than CVPR submission.
 * I conducted further analysis of experimental results and included comparisons to an additional set of baseline methods.
-* I implemented a variant of our approach to perform spatial pooling strategies over people.
+* I implemented a variant of their approach to perform spatial pooling strategies over people.
    
 
 ## Abstract
