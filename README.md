@@ -90,3 +90,134 @@ They used 3493 frames for training, and the remaining 1337 frames for testing. T
   * Player Annotation corresponds to a tight bounding box surrounds each player
 * Each {Player Annotation} in format: {Action Class} X Y W H
 * Videos with resolution of 1920x1080 are: 2 37 38 39 40 41 44 45 (8 in total). All others are 1280x720.
+
+
+
+
+# [This Project is a PyTorch Implementation for a Volleyball Ablation Study](#)  
+## **Exploring Temporal and Spatial Representations for Group Activity Recognition**  
+
+## **Contents**  
+0. [Abstract](#abstract)  
+1. [Baselines and Experiments](#baselines-and-experiments)  
+2. [Key Insights](#key-insights)  
+3. [Results](#results)  
+4. [Dataset](#dataset)  
+5. [Installation](#installation)  
+6. [License and Citation](#license-and-citation)
+
+---
+
+## **Abstract**  
+This project investigates group activity recognition in volleyball games through an extensive ablation study across multiple baselines. Using temporal and spatial information alongside deep learning models, the experiments emphasize learning representations at both individual player and team levels. This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline.  
+
+---
+
+## **Baselines and Experiments**  
+
+### **Baseline B1-Tuned**  
+- **Objective:** Fine-tune an image classifier for 8 activity classes using only the middle frame of each clip.  
+- **Implementation:**  
+  - Fine-tuned ResNet50 on the middle frame.  
+  - Extended experimentation by using a sequence of 9 frames (5 before, 4 after the target).  
+- **Result:** A foundational accuracy benchmark for subsequent baselines.  
+
+---
+
+### **Baseline B3**  
+A three-step model emphasizing individual player-level classification:  
+1. **Step A:** Train ResNet50 on cropped player images for 9 individual actions.  
+2. **Step B:** Infer representations by extracting player features (2048 dimensions per player) and max-pooling them into a single scene-level feature.  
+3. **Step C:** Train a classifier using these pooled representations for 8 activity classes.  
+
+**Key Results:**  
+- Step A achieved **74.45%** accuracy on the individual action classifier.  
+- Step C performance reached **50.64%**, underscoring the challenge of generalizing scene-level features.  
+
+---
+
+### **Baseline B4**  
+- **Implementation #1:**  
+  - Extract 9-frame sequences using the B1-tuned classifier.  
+  - Train an LSTM to classify activities based on these temporal representations.  
+  - Result: **75.47% accuracy**.  
+
+- **Implementation #2:**  
+  - Augment the ResNet50 backbone with an LSTM layer for end-to-end training.  
+
+---
+
+### **Baseline B5**  
+- **Objective:** Model temporal information at the player level.  
+- **Approach:**  
+  - Train an LSTM for player-level sequences (9 frames).  
+  - Max-pool player representations into scene-level features and train a classifier.  
+
+---
+
+### **Baseline B6**  
+- **Enhancement:** Incorporate LSTM layers at the scene level to classify sequences of 9 frames.  
+- **Key Insight:** Combining temporal modeling at both individual and scene levels significantly boosts performance.  
+
+---
+
+### **Baseline B7**  
+- **Full Model (Version 1):**  
+  - **LSTM-1:**  
+    - Input: Features (9 × 12 × 2048) for 12 players across 9 frames.  
+    - Output: Temporal player-level features max-pooled into a scene-level representation (9 × 2048).  
+  - **LSTM-2:**  
+    - Input: Scene-level representations (9 × 2048).  
+    - Output: Classification over 8 activity classes.  
+
+---
+
+### **Baseline B8**  
+**Final Model (Best Accuracy: 82.42%)**  
+- **Key Innovation:**  
+  - Separate player representations into **two teams** before pooling.  
+  - Scene representation: Concatenate max-pooled features for team 1 and team 2.  
+  - Input to LSTM-2: 9 × 4096 (2048 per team).  
+- **Impact:** Improved understanding of team dynamics resulted in the highest accuracy across all baselines.  
+
+---
+
+## **Key Insights**  
+1. **Temporal Information Matters:** Adding LSTMs significantly enhanced model performance.  
+2. **Team Representations Are Crucial:** Separating and pooling player features by teams reduced confusion between activities.  
+3. **Naive Classifiers Fall Short:** Scene-level classification benefits from hierarchical modeling of players and teams.  
+
+---
+
+## **Results**  
+| **Baseline** | **Methodology**                     | **Test Accuracy** |  
+|--------------|-------------------------------------|--------------------|  
+| B1-Tuned     | Image classification on ResNet50   | Foundational      |  
+| B3           | Player-level classification        | 74.45%            |  
+| B4           | LSTM on extracted features         | 75.47%            |  
+| B7           | Full hierarchical model            | 81.2%             |  
+| **B8**       | Hierarchical + Team separation     | **82.42%**        |  
+
+---
+
+## **Dataset**  
+- **Volleyball Dataset**: Contains annotated videos split into Train, Validation, and Test sets.  
+- **Structure:**  
+  - **Frames:** Sequences of 41 images (20 before, 20 after, 1 target frame).  
+  - **Annotations:**  
+    - Frame-level activity.  
+    - Player-level bounding boxes and actions.  
+
+---
+
+## **Installation**  
+1. Clone this repository:  
+   ```bash  
+   git clone https://github.com/username/volleyball-ablation.git  
+
+
+
+
+
+
+
