@@ -1,0 +1,11 @@
+# Baseline-8
+
+# here we will do the following :
+    # use annotations pickle file again to seperate from obj.box
+    # then use resnet again 
+    # then you will have .npy files to extract features using lstm-1 .
+    # lstm-1 will be the same (we won't repeat it) .
+    # we will repeat from maxpooling 12 * 9 * 2048 , 
+    # maxpool first 6 and second 6 then concatenation . 
+    # then do what we did in lstm-2 , but take care of the input size 
+    # it will be 2 * 2048 will be 4096 ( 9 * 4096 will be the input to the lstm )
