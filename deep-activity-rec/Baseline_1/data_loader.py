@@ -202,35 +202,3 @@ if __name__ == "__main__" :
     print('end..')
 
     save_pickle_files(train_mapping , validation_mapping , test_mapping)
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
