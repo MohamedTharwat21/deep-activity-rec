@@ -1,6 +1,0 @@
-Baseline B6
-    ● Same B3 steps A and B
-        ○ For B, you will extract representations for each clip of 9 frames
-    ● For C
-        ○ Do LSTM on sequences from step B
-    ● This is a model where LSTM is applied on the image level only
