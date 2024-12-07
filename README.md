@@ -20,7 +20,8 @@
    
 
 ## Abstract
-This project investigates **group activity recognition** in volleyball games through an extensive ablation study across **multiple baselines**. Using **temporal and spatial information alongside deep learning models** , the experiments emphasize learning representations at both individual player and team levels. This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.  
+This project investigates **group activity recognition** in volleyball games through an extensive ablation study across **multiple baselines**. Using **temporal and spatial information alongside deep learning models** , the experiments emphasize learning representations at both individual player and team levels. This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.
+  
 In group activity recognition, the temporal dynamics of the whole activity can be inferred based on the dynamics of the individual people representing the activity. We build a deep model to capture these dynamics based on LSTM models. To make use of these observations, we present a **2-stage deep temporal model for the group activity recognition** problem.  In our model, a LSTM model is designed to represent **action dynamics of individual people** in a sequence and another LSTM model is designed to **aggregate person-level information** for whole activity understanding.  We evaluate our model over two datasets: the Collective Activity Dataset and **a new volleyball dataset**.
 
 
@@ -229,5 +230,6 @@ While the current implementation leverages ResNet50 and LSTM for temporal modeli
 
 ### Expected Impact of Future Work
 Implementing these improvements could significantly enhance the accuracy and robustness of group activity recognition models, making them more suitable for complex real-world scenarios.
+
 These methodologies also pave the way for broader applications in multi-agent systems, behavioral analysis, and automated event summarization.
 
