@@ -118,7 +118,7 @@ A three-step model emphasizing individual player-level classification:
 
 ### [NEW Download Link (all below combined google drive](https://drive.google.com/drive/folders/1rmsrG1mgkwxOKhsr-QYoi9Ss92wQmCOS?usp=sharing). 
 
-We collected a new dataset using publicly available **YouTube volleyball** videos. We annotated **4830 frames** that were handpicked from **55 videos** with 9 player action labels and 8 team activity labels. 
+They collected a new dataset using publicly available **YouTube volleyball** videos. They annotated **4830 frames** that were handpicked from **55 videos** with 9 player action labels and 8 team activity labels. 
 
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/dataset1.jpg" alt="Figure 3" height="400" >
 
@@ -228,5 +228,6 @@ While the current implementation leverages ResNet50 and LSTM for temporal modeli
 - **Optimization for Edge Devices**: Optimize the model pipeline for deployment on edge devices for **real-time group activity recognition** in dynamic settings like sports analytics or surveillance systems.
 
 ### Expected Impact of Future Work
-Implementing these improvements could significantly enhance the accuracy and robustness of group activity recognition models, making them more suitable for complex real-world scenarios. These methodologies also pave the way for broader applications in multi-agent systems, behavioral analysis, and automated event summarization.
+Implementing these improvements could significantly enhance the accuracy and robustness of group activity recognition models, making them more suitable for complex real-world scenarios.
+These methodologies also pave the way for broader applications in multi-agent systems, behavioral analysis, and automated event summarization.
 
