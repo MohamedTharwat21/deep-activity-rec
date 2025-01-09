@@ -1,4 +1,4 @@
-## [A Pytorch Implementation of the paper called :  "A Hierarchical Deep Temporal Model for Group Activity Recognition." Mostafa S. Ibrahim, Srikanth Muralidharan, Zhiwei Deng, Arash Vahdat, Greg Mori.  IEEE Computer Vision and Pattern Recognition 2016](http://www.cs.sfu.ca/~mori/research/papers/ibrahim-cvpr16.pdf)
+## ["A Hierarchical Deep Temporal Model for Group Activity Recognition."]
 
 ## Contents
 0. [History](#history)
@@ -13,16 +13,26 @@
 
    
 ## History
-* The paper is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
+* The paper -i followed- is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
 * They - in their work - have collected an expanded Volleyball dataset - which i will use in my training - that is 3 times larger than CVPR submission.
 * I conducted further analysis of experimental results and included comparisons to an additional set of baseline methods.
 * I implemented a variant of their approach to perform spatial pooling strategies over people.
    
 
 ## Abstract
-This project investigates **group activity recognition** in volleyball games through an extensive ablation study across **multiple baselines**. Using **temporal and spatial information alongside deep learning models** , the experiments emphasize learning representations at both individual player and team levels. This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.
+This project investigates **group activity recognition** in volleyball games through an extensive ablation study across **multiple baselines**. 
+
+Using **temporal and spatial information alongside deep learning models** , the experiments emphasize learning representations at both individual player and team levels. 
+
+This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.
   
-In group activity recognition, the temporal dynamics of the whole activity can be inferred based on the dynamics of the individual people representing the activity. We build a deep model to capture these dynamics based on LSTM models. To make use of these observations, we present a **2-stage deep temporal model for the group activity recognition** problem.  In our model, a LSTM model is designed to represent **action dynamics of individual people** in a sequence and another LSTM model is designed to **aggregate person-level information** for whole activity understanding.  We evaluate our model over two datasets: the Collective Activity Dataset and **a new volleyball dataset**.
+In group activity recognition, the temporal dynamics of the whole activity can be inferred based on the dynamics of the individual people representing the activity.I build a deep model to capture these dynamics based on LSTM models.
+
+To make use of these observations,I present a **2-stage deep temporal model for the group activity recognition** problem.  
+
+In the Modelling, a LSTM model is designed to represent **action dynamics of individual people** in a sequence and another LSTM model is designed to **aggregate person-level information** for whole activity understanding.  
+
+They evaluated the model over two datasets: the Collective Activity Dataset and **a new volleyball dataset**. but I just used the Volleyball Dataset.
 
 
 ## Model
@@ -32,7 +42,7 @@ In group activity recognition, the temporal dynamics of the whole activity can b
 
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/fig2-b.png" alt="Figure 2" height="400" >
 
-**Figure 2**: Detailed figure for the model. Given tracklets of K-players, we feed each tracklet in a CNN, followed by a person LSTM layer to represent each player's action. We then pool over all people's temporal features in the scene. The output of the pooling layer is feed to the second LSTM network to identify the whole teams activity.
+**Figure 2**: Detailed figure for the model. Given tracklets of K-players, feeding each tracklet in a CNN, followed by a person LSTM layer to represent each player's action.Then pooling over all people's temporal features in the scene. The output of the pooling layer is feed to the second LSTM network to identify the whole teams activity.
 
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/fig3.jpg" alt="Figure 3" height="400" >
 
