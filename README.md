@@ -1,7 +1,6 @@
 ## ["A Hierarchical Deep Temporal Model for Group Activity Recognition."]
 
 ## Contents
-0. [History](#history)
 0. [Abstract](#abstract)
 0. [Model](#model)
 0. [Baselines and Experiments](#baselines-and-experiments)  
@@ -11,13 +10,6 @@
 0. [Results](#results) 
 0. [Future Improvements](#Future-Improvements)    
 
-   
-## History
-* The paper -i followed- is uploaded on arxiv. [Link](http://arxiv.org/pdf/1607.02643v1.pdf).
-* They - in their work - have collected an expanded Volleyball dataset - which i will use in my training - that is 3 times larger than CVPR submission.
-* I conducted further analysis of experimental results and included comparisons to an additional set of baseline methods.
-* I implemented a variant of their approach to perform spatial pooling strategies over people.
-   
 
 ## Abstract
 This project investigates **group activity recognition** in volleyball games through an extensive ablation study across **multiple baselines**. 
