@@ -66,17 +66,13 @@ A three-step model emphasizing individual player-level classification:
 2. **Step B:** Infer representations by extracting player features (2048 dimensions per player) and max-pooling them into a single scene-level feature.  
 3. **Step C:** Train a classifier using these pooled representations for 8 activity classes.  
 
-**Key Results:**  
-- Step A achieved **74.45%** accuracy on the individual action classifier.  
-- Step C performance reached **50.64%**, underscoring the challenge of generalizing scene-level features.  
-
 ---
 
 ### **Baseline B4**  
 - **Implementation #1:**  
   - Extract 9-frame sequences using the B1-tuned classifier.  
   - Train an LSTM to classify activities based on these temporal representations.  
-  - Result: **75.47% accuracy**.  
+    
 
 - **Implementation #2:**  
   - Augment the ResNet50 backbone with an LSTM layer for end-to-end training.  
