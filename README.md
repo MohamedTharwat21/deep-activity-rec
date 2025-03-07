@@ -1,5 +1,6 @@
 ## ["A Hierarchical Deep Temporal Model for Group Activity Recognition."]
 
+
 ## Contents
 0. [Abstract](#abstract)
 0. [Model](#model)
