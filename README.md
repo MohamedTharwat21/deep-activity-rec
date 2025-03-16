@@ -19,8 +19,7 @@ Using **temporal and spatial information alongside deep learning models** , the 
 
 This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.
   
-This project is a PyTorch implementation of the [Original Paper](https://arxiv.org/abs/1511.06040)  
-, which was originally implemented in C++ and the Caffe deep learning framework by the authors.
+This Project is a PyTorch implementation of the [Original Paper](https://arxiv.org/abs/1511.06040) ,which was originally implemented in C++ and the Caffe deep learning framework by the authors.
 
 ## Model
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/fig1.png" alt="Figure 1" height="400" >
