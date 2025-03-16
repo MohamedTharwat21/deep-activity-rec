@@ -19,14 +19,8 @@ Using **temporal and spatial information alongside deep learning models** , the 
 
 This repository explores the progression of methods, from naive image classification to hierarchical models integrating LSTMs for temporal dependencies, achieving a best accuracy of **82.42%** on the final baseline **B8**.
   
-In group activity recognition, the temporal dynamics of the whole activity can be inferred based on the dynamics of the individual people representing the activity.I build a deep model to capture these dynamics based on LSTM models.
-
-To make use of these observations,I present a **2-stage deep temporal model for the group activity recognition** problem.  
-
-In the Modelling, a LSTM model is designed to represent **action dynamics of individual people** in a sequence and another LSTM model is designed to **aggregate person-level information** for whole activity understanding.  
-
-They evaluated the model over two datasets: the Collective Activity Dataset and **a new volleyball dataset**. but I just used the Volleyball Dataset.
-
+This project is a PyTorch implementation of the [Original Paper](https://arxiv.org/abs/1511.06040)  
+, which was originally implemented in C++ and the Caffe deep learning framework by the authors.
 
 ## Model
 <img src="https://github.com/mostafa-saad/deep-activity-rec/blob/master/img/fig1.png" alt="Figure 1" height="400" >
